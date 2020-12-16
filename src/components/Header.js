@@ -7,6 +7,7 @@ import { UserContext } from '../UserContext';
 const Header = () => {
   const { data, userLogout } = React.useContext(UserContext);
 
+
   return (
     <header className={style.header}>
       <nav className={`${style.nav} container`}>
@@ -23,6 +24,7 @@ const Header = () => {
             Login / Criar Login
           </Link>
         )}
+
       </nav>
     </header>
   );

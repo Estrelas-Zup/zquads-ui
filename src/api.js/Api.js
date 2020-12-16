@@ -13,7 +13,9 @@ export function TOKEN_POST(body) {
   };
 }
 
+
 export function USER_GET(jwtToken) {
+
   return {
     url: API_URL + '/users/userInfo',
     options: {
@@ -24,6 +26,7 @@ export function USER_GET(jwtToken) {
     },
   };
 }
+
 
 export function USER_POST(body) {
   return {
@@ -37,3 +40,4 @@ export function USER_POST(body) {
     },
   };
 }
+
