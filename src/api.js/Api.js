@@ -13,7 +13,7 @@ export function TOKEN_POST(body) {
   };
 }
 
-export function USER_POST(jwtToken) {
+export function USER_GET(jwtToken) {
   return {
     url: API_URL + '/users/userInfo',
     options: {
@@ -21,6 +21,19 @@ export function USER_POST(jwtToken) {
       headers: {
         Authorization: 'Bearer ' + jwtToken,
       },
+    },
+  };
+}
+
+export function USER_POST(body) {
+  return {
+    url: API_URL + '/users',
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
     },
   };
 }
