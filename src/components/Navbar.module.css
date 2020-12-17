@@ -1,21 +1,31 @@
-.header {
+.navbar {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   position: fixed;
-  width: 100%;
+  width: 20%;
+  height: 100%;
   z-index: 100;
-  background-color: white;
+  background-color: #EDEDF2;
   top: 0;
+  
 }
 
 .nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
 }
 
+.zquads{
+  size: 36px;
+  margin: 70px 60px 60px 45px;
+}
+
+
+
 .logo {
-  padding: 0.5rem 0;
+  margin-left: 0;
 }
 
 .login {
