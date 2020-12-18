@@ -1,0 +1,17 @@
+.nav-card {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.nav-card-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.nav-card-info {
+  margin: 10px 0 10px 50px;
+}
+.nav-card-info span {
+  display: block;
+}

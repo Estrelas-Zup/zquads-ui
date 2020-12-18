@@ -1,13 +1,20 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
+import Header from '../Header';
+import Squads from '../Squads/Squads';
+import UserHeader from './UserHeader';
 
 const User = () => {
   const { data, userLogout } = React.useContext(UserContext);
   return (
-    <div>
-      Usuario<button onClick={userLogout}>Sair</button>
-      Ola@{data && data.nickname}
-    </div>
+    <section className="container">
+      <Header />
+      <UserHeader />
+      <Routes>
+        <Route element={<Squads />} />
+      </Routes>
+    </section>
   );
 };
 

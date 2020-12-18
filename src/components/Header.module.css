@@ -1,34 +1,23 @@
 .header {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   position: fixed;
-  width: 100%;
-  z-index: 100;
-  background-color: white;
+  box-shadow: 2px 2px 50px rgb(221, 221, 221);
   top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background: #e6e6e6;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  cursor: pointer;
 }
 
 .logo {
-  padding: 0.5rem 0;
+  padding-top: 4rem;
+  margin: 0 auto;
 }
 
-.login {
-  color: #333;
-  display: flex;
-  align-items: center;
-}
-
-.login::after {
-  content: '';
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background: url('../Assets/user.svg') no-repeat center center;
-  margin-left: 0.8rem;
+.navCardList {
+  margin-top: 45px;
 }
