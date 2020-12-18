@@ -56,6 +56,7 @@ const LoginCreate = () => {
       </form>
     </section>
   );
+                      
 };
 
 export default LoginCreate;
