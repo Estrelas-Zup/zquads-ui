@@ -1,4 +1,5 @@
 export const API_URL = 'http://localhost:8080';
+const token = window.localStorage.getItem('token');
 
 export function TOKEN_POST(body) {
   return {
@@ -34,6 +35,18 @@ export function USER_POST(body) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
+    },
+  };
+}
+
+export function SQUAD_GET() {
+  return {
+    url: API_URL + '/squads',
+    options: {
+      method: 'GET',
+      headers: {
+        Authorization: 'Bearer ' + token,
+      },
     },
   };
 }

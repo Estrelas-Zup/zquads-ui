@@ -15,7 +15,7 @@ export const UserStorage = ({ children }) => {
     async function () {
       setData(null);
       setError(null);
-      setLoading(false);
+      setLoading(null);
       setLogin(false);
       window.localStorage.removeItem('token');
       navigate('/');
@@ -42,10 +42,10 @@ export const UserStorage = ({ children }) => {
       const { jwtToken } = await tokenRes.json();
       window.localStorage.setItem('token', jwtToken);
       await getUser(jwtToken);
-      navigate('/conta');
+      navigate('conta/*');
     } catch (err) {
       setError(err.message);
-      setLogin(false);
+      setLogin(null);
     } finally {
       setLoading(false);
     }
@@ -67,6 +67,8 @@ export const UserStorage = ({ children }) => {
         } finally {
           setLoading(false);
         }
+      } else {
+        setLogin(false);
       }
     }
     autoLogin();
