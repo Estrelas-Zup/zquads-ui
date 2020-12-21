@@ -21,12 +21,14 @@ const Header = () => {
     getSquads();
   }, []);
 
+
   return (
     <header className={style.header}>
       <nav className={`${style.nav} container`}>
         <Link className={style.logo} to="/" aria-label="Zquads - Home">
           <Zquads />
         </Link>
+
         <div className={style.navCardList}>
           {loading ? (
             <span>loading...</span>
@@ -40,6 +42,7 @@ const Header = () => {
             ))
           )}
         </div>
+                 
       </nav>
     </header>
   );

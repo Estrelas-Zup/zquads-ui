@@ -3,6 +3,7 @@ import React from 'react';
 const types = {
   email: {
     regex: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+
     message: 'Preencha um email válido',
   },
   password: {
@@ -10,6 +11,7 @@ const types = {
     message:
       'A senha precisa ter 1 caracter míusculo, 1 mínusculo e 1 digito. Com no mínimo 8 caracteres!',
   },
+
 };
 
 const UseForm = (type) => {

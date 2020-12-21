@@ -8,9 +8,11 @@ import styles from './LoginForm.module.css';
 import { Link } from 'react-router-dom';
 import ButtonCreate from '../Form/ButtonCreate';
 
+
 const LoginForm = () => {
   const email = UseForm('email');
   const password = UseForm();
+
 
   const { userLogin, error, loading } = React.useContext(UserContext);
 
@@ -22,6 +24,7 @@ const LoginForm = () => {
   return (
     <section className="animeLeft">
       <form className={styles.form} onSubmit={handleSubmit}>
+
         <Input
           type="text"
           name="email"
@@ -34,6 +37,7 @@ const LoginForm = () => {
           placeholder="Senha"
           {...password}
         />
+
         {loading ? (
           <Button disabled>Carregando...</Button>
         ) : (
@@ -50,6 +54,7 @@ const LoginForm = () => {
       <Link className={styles.perdeu} to="/login/perdeu">
         Perdeu a senha
       </Link>
+
     </section>
   );
 };
