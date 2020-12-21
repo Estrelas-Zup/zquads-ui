@@ -1,7 +1,6 @@
 import React from 'react';
 import { TOKEN_POST, USER_GET } from './api.js/Api';
 import { useNavigate } from 'react-router-dom';
-
 export const UserContext = React.createContext();
 
 export const UserStorage = ({ children }) => {
@@ -29,7 +28,6 @@ export const UserStorage = ({ children }) => {
     const json = await response.json();
     setData(json);
     setLogin(true);
-    console.log(json);
   }
 
   async function userLogin(email, password) {

@@ -1,6 +1,6 @@
 import './styles.css';
 const defaultImage =
-  'https://www.capitani.com.br/wp-content/uploads/2017/07/java-logo.jpg';
+  'https://mundooffice.net/wp-content/uploads/2019/05/conheca-cursos-de-programacao-gratis-1132x600-600x600.jpg';
 
 const NavCard = (props) => {
   return (
@@ -11,7 +11,7 @@ const NavCard = (props) => {
         alt="Squad Logo"
       />
       <div className="nav-card-info">
-        <span className="nav-card-info__title">{props.title}</span>
+        <span className="nav-card-info__title">#{props.title}</span>
         <span className="nav-card-info__subtitle">{props.subtitle}</span>
       </div>
     </div>
