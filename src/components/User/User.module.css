@@ -1,0 +1,172 @@
+.container {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) 1fr 1.5fr 1fr;
+  grid-template-areas:
+    'sidenav header header header'
+    'sidenav content skills squad';
+}
+
+.squad {
+  grid-area: squad;
+}
+
+.header {
+  grid-area: header;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header nav p {
+  display: block;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #2a2a2a99;
+  font-weight: 600;
+  margin-left: 80px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.header nav p:hover {
+  color: #2a2a2a;
+}
+
+.nickname {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.nickname span {
+  color: #6e58df;
+}
+
+.data {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2a2a2a99;
+}
+
+.dashboard {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2a2a2a99;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #ededf2;
+  padding: 50px 0;
+}
+
+.sidenav h1 {
+  display: block;
+  min-width: 60px;
+  max-width: 180px;
+  margin: 30px auto 80px auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2a2a2a;
+  letter-spacing: 0.4rem;
+}
+
+.sidenav h1 span {
+  color: #6e58df;
+}
+
+.pesquisa {
+  width: 100%;
+  height: 100px;
+  background-color: #ededf2;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: #2a2a2a10;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.loading {
+  padding: 30px;
+}
+
+.squads {
+  height: 550px;
+  cursor: pointer;
+}
+
+.content {
+  grid-area: content;
+  height: 100%;
+}
+
+.photo {
+  display: block;
+  min-width: 60px;
+  max-width: 180px;
+  margin: 0px auto 0px auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.photo img {
+  margin-bottom: -20px;
+}
+
+.photo p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.photo span {
+  display: block;
+  margin: 0px auto 0px auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #6e58df;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.userInfo {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ededf2;
+  margin: 30px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 90px;
+}
+
+.userInfo h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #2a2a2a;
+}
+
+.userInfo p {
+  margin-bottom: 25px;
+  color: #6e58df;
+  font-size: 18px;
+}
+
+.infor {
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
